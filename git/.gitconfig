@@ -1,0 +1,15 @@
+[user]
+	email = 2253059449@qq.com
+	name = joshua 
+	signingkey = 0612E968E0D8299F13C0F7B68624BDA61BB154AF
+[commit]
+	gpgsign = true
+[core]
+	quotepath = false
+	commitGraph = true
+	editor = nvim
+[receive]
+	advertisePushOptions = true
+	procReceiveRefs = refs/for
+[gc]
+	writeCommitGraph = true

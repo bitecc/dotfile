@@ -140,3 +140,4 @@ export GPG_TTY=$(tty)
 alias ls=lsd
 alias vim=nvim
 
+eval $(dircolors -b $HOME/.dircolors)

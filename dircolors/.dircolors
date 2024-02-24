@@ -45,7 +45,7 @@ TERM xterm*
 #FILE 00 # regular file: use no color at all
 RESET 0 # reset to "normal" color
 DIR 01;34 # directory
-LINK 01;36 # symbolic link. (If you set this to 'target' instead of a
+LINK 04;36 # symbolic link. (If you set this to 'target' instead of a
  # numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00 # regular file with more than one link
 FIFO 40;33 # pipe
@@ -54,13 +54,13 @@ DOOR 01;35 # door
 BLK 40;33;01 # block device driver
 CHR 40;33;01 # character device driver
 ORPHAN 40;31;01 # symlink to nonexistent file, or non-stat'able file ...
-MISSING 00 # ... and the files they point to
+MISSING 05;31 # ... and the files they point to
 SETUID 37;41 # file that is setuid (u+s)
 SETGID 30;43 # file that is setgid (g+s)
 CAPABILITY 30;41 # file with capability
-STICKY_OTHER_WRITABLE 30;42 # dir that is sticky and other-writable (+t,o+w)
-OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
-STICKY 37;44 # dir with the sticky bit set (+t) and not other-writable
+STICKY_OTHER_WRITABLE 01;34 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 01;34 # dir that is other-writable (o+w) and not sticky
+STICKY 01;34 # dir with the sticky bit set (+t) and not other-writable
 # This is for files with execute permission:
 EXEC 01;32
 # List any file extensions like '.gz' or '.tar' that you would like ls
@@ -77,9 +77,9 @@ EXEC 01;32
 #.sh 01;32
 #.csh 01;32
  # archives or compressed (bright red)
-.tar 01;31
-.tgz 01;31
-.arc 01;31
+.tar 04;33
+.tgz 04;33
+.arc 01;33
 .arj 01;31
 .taz 01;31
 .lha 01;31
@@ -90,17 +90,17 @@ EXEC 01;32
 .txz 01;31
 .tzo 01;31
 .t7z 01;31
-.zip 01;31
+.zip 04;33
 .z 01;31
 .dz 01;31
-.gz 01;31
+.gz 04;33
 .lrz 01;31
 .lz 01;31
 .lzo 01;31
-.xz 01;31
+.xz 04;33
 .zst 01;31
 .tzst 01;31
-.bz2 01;31
+.bz2 01;33
 .bz 01;31
 .tbz 01;31
 .tbz2 01;31
@@ -116,7 +116,7 @@ EXEC 01;32
 .ace 01;31
 .zoo 01;31
 .cpio 01;31
-.7z 01;31
+.7z 01;33
 .rz 01;31
 .cab 01;31
 .wim 01;31

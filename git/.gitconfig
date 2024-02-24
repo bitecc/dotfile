@@ -8,6 +8,7 @@
 	quotepath = false
 	commitGraph = true
 	editor = nvim
+	fileMode = false
 [receive]
 	advertisePushOptions = true
 	procReceiveRefs = refs/for
